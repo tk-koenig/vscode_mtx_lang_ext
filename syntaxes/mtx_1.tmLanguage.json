@@ -1,0 +1,151 @@
+{
+  "information_for_contributors": "This file is created by Marco Koenig",
+  "name": "mtx",
+  "scopeName": "source.mtx",
+  "patterns": [
+    {
+      "name": "markup.italic mtx.info",
+      "match": "\\b(HINT|INFO|INFORMATION|Info|NOTICE|II)\\b|(?i)\\b(info|information)\\:"
+    },
+    {
+      "name": "cpl.statement",
+      "match": "\\b(if|while|do|for|return|then|endif|else|WHILE|FOR|IF|ELSE|THEN|ENDIF|END|WAIT|DO)\\b"
+    },
+    {
+      "name": "cpl.keys",
+      "match": "\\b(ABS|ACOS|ACS|AND|APOS|ASC|ASIN|ATAN|ATAN2|AXADR$|AXINF|AXO|AXP|BCD|BIN|BITIF|CALL|CASE|CHR$|CLOCK|CLOSE|CLRWARN|COF|COS|CPROBE|DATE|DBLOAD|DBMOVE|DBSAVE|DBSEA|DBSEAX|DBTAB|DBTABX|DBTABXL|DCT|DIM|DIRCR|DIRDEL|DIRINF|DO|DPC|ELSE|END|ENDIF|ENDCASE|EOF|ERASE|ERRNO|FILEACCESS|FILECOPY|FILEDATE|FILENO|FILEPOS|FILESIZE|FOR|FXC|FXCR|FXDEL|FXINS|GETERR|IF|INP#|INSTR|INT    |LABEL|LEN|LJUST|MCA|MCASE$|MCODS|MCOPS|MCS|MID$|MMC|NCF|NEXT|NJUST|NOT|NUL|OF|OPENR|OPENW|OTHERWISE|OR|PCS|PCSPROBE|PDIM|PLC|PMT|PMV|PPOS|PRN#|PROBE|REM|REPEAT|REWRITE|ROUND|SCL|SCS|SCSL|SCS3L|SDLOAD|SDR|SDSAVE|SEEK|SETERR|SETWARN|SIN|SPOS|SQRT|STEP|STR$|TAN|TCV|THEN|TIME|TO|TRIM$|UNTIL|VAL|VARINF|VERSINF$|WAIT|WCS|WHILE|XOR|XTAB|XTABCR|ZOCDEL|ZOCINS|ZOT|ZOTCR|ZOV)\\b"
+    },
+
+    {
+      "name":"cpl.boolean",
+      "match":"\\b(TRUE|FALSE|true|false)\\b"
+    },
+    {
+      "name": "cpl.globalVar",
+      "match": "@\\w+\\S\\b"
+    },
+    {
+      "name": "cpl.localVar",
+      "match": "#\\w+\\S\\b"
+    },
+    {
+      "name": "string.quoted.double.untitled",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.untitled",
+          "match": "\\."
+        }
+      ]
+    },
+    {
+      "name": "mathoperation",
+      "match": "[<>+\\-*\/]"
+    },
+    {
+      "name": "brakeds",
+      "match": "[\\]\\(\\)]"
+    },
+    {
+      "name": "comment.line.cpl",
+      "begin": "(:REM)",
+      "end": "\n"
+    },
+    {
+      "name": "comment.line.din",
+      "begin": ";",
+      "end": "\n"
+    },
+    {
+      "name": "invalid.illegal.umlaute",
+      "match": "ä|ü|ö|Ä|Ü|Ö"
+    },
+    {
+      "name": "markup.raw",
+      "match": "[@<>=\\(\\)\\[\\]]"
+    },
+    {
+      "name": "string.quoted.double.untitled",
+      "begin": "(MSG)",
+      "end": "\n"
+    },
+    {
+      "name": "variable.language.sdvar",
+      "match": "SD\\.\\w+.\\w+"
+    },
+    {
+      "name": "variable.language.SDVarL3",
+      "match": "SD\\.\\w*\\.\\w*\\.\\w*"
+    },
+    {
+      "name": "variable.language.SDVarL4",
+      "match": "SD\\.\\w*\\.\\w*\\.\\w*\\.\\w*"
+    },
+    {
+      "name": "markup.raw.ncline",
+      "match": "^[nN]\\d+"
+    },
+    {
+      "name": "markup.raw.cplline",
+      "match": "^\\d+"
+    },
+    {
+      "name": "markup.raw.dinG",
+      "match": "G\\d+"
+    },
+    {
+      "name": "markup.raw.dinF",
+      "match": "F\\d+"
+    },
+    {
+      "name": "variable.language.cplLine",
+      "match": "(?<=\\[).+?(?=\\])"
+    },
+    {
+      "name": "variable.language.JumpVar",
+      "match": "[.]+[A-Z]+\b"
+    },
+    {
+      "name": "variable.language.goto",
+      "match": "\\b(GOTO|GoTo)\\b"
+    },
+    {
+      "name": "variable.language.goto.dest",
+      "match": "\\.[A-Z0-1]{3,100}+"
+    },
+    {
+      "name": "din.conditionally.interrupt",
+      "match":"\\b(M0|M00|M2|M02|M30|M31|M32|M1|M01|M5|M105|M205)\\b"
+    }
+  ],
+  "repository": {
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.mtx_1",
+          "match": "\\b(if|while|for|return|FALSE|TRUE)\\b"
+        }
+      ]
+    },
+    "strings": {
+      "name": "string.quoted.double.mtx_1",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.mtx_1",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "commenta": {
+      "patterns": [
+        {
+          "name": "comment.control.mtx_1",
+          "match": "\\b(REM|;)\\b"
+        }
+      ]
+    }
+  }
+}
