@@ -1,0 +1,128 @@
+{
+    "NC Hheader with info":{
+        "prefix": "nc-header-info",
+        "description": "Set a comment header with custom information",
+        "body": [
+            ";############################################",
+            ";\tProg.name:",
+            ";\tVersion:",
+            ";\tDate:",
+            ";\tAuthor:,",
+            ";############################################",
+            ""
+        ]
+    },
+    "NC header without info":{
+        "prefix": "nc-header-no-info",
+        "description": "Set a comment header with custom information",
+        "body": [
+            ";############################################",
+            ";\tProg.name:",
+            ";############################################",
+            ""
+        ]
+    },
+    "FOR STEP TO NEXT loop":{
+        "prefix": "for",
+        "description": "FOR STEP TO NEXT loop",
+        "body": [
+            "10\tFOR CNT%=1 TO NR_CNT%",
+            "20\t\t:REM Do something...",
+            "30\tNEXT CNT%"
+        ]
+    },
+    "REPEAT UNTIL loop":{
+        "prefix": "repeat",
+        "description": "REPEAT UNTIL loop",
+        "body": [
+            "10\tREPEAT",
+            "20\t\tX=X+1\t\t:REM Repeat until X=100",
+            "30\tUNTIL X=100\t:REM Condition TRUE"
+        ]
+    },
+    "WHILE-DO-END loop":{
+        "prefix": "while",
+        "description": "WHILE DO END loop",
+        "body": [
+            "10\tWHILE {Condition TRUE} DO ",
+            "20\t\t:REM Do something",
+            "30\tEND"
+        ]
+    },
+    "ChangeLog entry":{
+        "prefix": "change-log-entry",
+        "description": "Set an template of a changelog entry",
+        "body":[
+            ";###########################################################",
+            "; Version:\t",
+            ";###########################################################",
+            "; Autor:\t",
+            "; Reason:\t",                   	
+            "; Changes:\t",
+            ";\t\t- ",
+            ""
+        ]
+    },
+    "CALL programm":{
+        "prefix": "call",
+        "body":[
+            ";------------------------------------------------------------------------------------------------------------------------------------",
+            "N1\tCALL ;Path of the called program;",
+            ";------------------------------------------------------------------------------------------------------------------------------------"
+        ]
+    },
+    "IF-THEN-ENDIF":{
+        "prefix": "if-then-endif",
+        "body":[
+            "10\tIF (TRUE) THEN",
+            "20\t\t:REM Do something",
+            "30\tENDIF"
+        ]
+    },
+    "IF-THEN-ELSE-ENDIF":{
+        "prefix": "if-then-else-endif",
+        "body":[
+            "10\tIF (TRUE) THEN",
+            "20\t\t:REM Do something",
+            "30\tELSE",
+            "40\t\t:REM Do something else",
+            "50\tENDIF"
+        ]
+    },
+    "IF-AND-THEN-ENDIF":{
+        "prefix": "if-and-then-endif",
+        "body":[
+            "10\tIF (TRUE) AND (TRUE) THEN",
+            "20\t\t:REM Do something",
+            "30\tENDIF"
+        ]
+    },
+    "IF-AND-THEN-ELSE-ENDIF":{
+        "prefix": "if-and-then-else-endif",
+        "body":[
+            "10\tIF (TRUE) AND (TRUE) THEN",
+            "20\t\t:REM Do something",
+            "30\tELSE",
+            "40\t\t:REM Do something else",
+            "50\tENDIF"
+        ]
+    },
+    "IF-OR-THEN-ENDIF":{
+        "prefix": "if-or-then-endif",
+        "body":[
+            "10\tIF (TRUE) OR (TRUE) THEN",
+            "20\t\t:REM Do something",
+            "30\tENDIF"
+        ]
+    },
+    "IF-OR-THEN-ELSE-ENDIF":{
+        "prefix": "if-or-then-else-endif",
+        "body":[
+            "10\tIF (TRUE) OR (TRUE) THEN",
+            "20\t\t:REM Do something",
+            "30\tELSE",
+            "40\t\t:REM Do something else",
+            "50\tENDIF"
+        ]
+    }
+}

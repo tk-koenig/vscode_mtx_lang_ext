@@ -17,7 +17,7 @@
     },
 
     {
-      "name":"cpl.boolean",
+      "name":"constant.other.reference.cpl.boolean",
       "match":"\\b(TRUE|FALSE|true|false)\\b"
     },
     {

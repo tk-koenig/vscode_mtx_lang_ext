@@ -41,6 +41,12 @@
                 "scopeName": "source.mtx",
                 "path": "./syntaxes/mtx_1.tmLanguage.json"
             }
+        ],
+        "snippets": [
+			{
+				"language": "mtx_1",
+				"path": "./snippets/mtx_1.json"
+            }
         ]
     }
 }
