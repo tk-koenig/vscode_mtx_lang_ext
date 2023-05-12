@@ -1,8 +1,10 @@
 {
     "name": "mtx-syntax-color",
     "displayName": "mtx-syntax-color",
-    "description": "set-description-later",
+    "description": "Language extension for Bosch Rexroth MTX language.",
     "publisher": "MarcoKoenig",
+    "license": "MIT",
+    "icon": "praewema.png",
     "author": {
         "name": "Marco König"
     },
