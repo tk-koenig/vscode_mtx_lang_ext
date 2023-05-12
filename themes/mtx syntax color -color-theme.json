@@ -747,7 +747,7 @@
 			],
 			"settings": {
 				"foreground": "#ff6b6b",
-				"fontStyle": "bold"
+				"fontStyle": "bold",
 			}
 		},
 		{
@@ -757,6 +757,16 @@
 			],
 			"settings": {
 				"foreground": "#FF0000",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "M-MQ-Functions",
+			"scope":[
+				"m_or_mq_funct"
+			],
+			"settings": {
+				"foreground": "#000000",
 				"fontStyle": "bold"
 			}
 		}

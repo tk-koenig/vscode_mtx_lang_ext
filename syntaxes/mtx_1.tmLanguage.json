@@ -125,6 +125,10 @@
     {
       "name": "din.conditionally.interrupt",
       "match":"\\b(M0|M00|M2|M02|M30|M31|M32|M1|M01|M5|M105|M205)\\b"
+    },
+    {
+      "name":"m_or_mq_funct",
+      "match":"MQ?[0-9]+"
     }
   ],
   "repository": {
