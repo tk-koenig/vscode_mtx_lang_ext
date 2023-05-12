@@ -2,12 +2,12 @@
     "name": "mtx-syntax-color",
     "displayName": "mtx-syntax-color",
     "description": "set-description-later",
-    "publisher": "mkoenig-software",
+    "publisher": "PRAEWEMA Antriebstechnik GmbH",
     "author": {
         "name": "Marco König"
     },
     "keywords": ["Bosch Rexroth", "MTX", "mtx", "Bosch", "MXT Syntax"],
-    "version": "0.0.1",
+    "version": "0.1.0",
     "engines": {
         "vscode": "^1.52.0"
     },
