@@ -11,6 +11,9 @@
     "engines": {
         "vscode": "^1.52.0"
     },
+    "repository": {
+        "url": "https://github.com/tk-koenig/vscode_mtx_lang_ext.git"
+    },
     "categories": [
         "Themes"
     ],
