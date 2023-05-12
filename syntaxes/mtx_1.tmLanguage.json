@@ -29,6 +29,10 @@
       "match": "#\\w+\\S\\b"
     },
     {
+      "name":"nc.vars",
+      "match":"[#@]?[A-Z]+_?\\w+[%$?!]"
+    },
+    {
       "name": "string.quoted.double.untitled",
       "begin": "\"",
       "end": "\"",
@@ -67,8 +71,12 @@
     },
     {
       "name": "string.quoted.double.untitled",
-      "begin": "(MSG)",
+      "begin": "(MSG)|(GMSG)",
       "end": "\n"
+    },
+    {
+      "name":"variable.language.sdvar.arr",
+      "match":"SD+.\\w+\\[[#@]\\w+[%!?$]].\\w+"
     },
     {
       "name": "variable.language.sdvar",

@@ -141,7 +141,11 @@
 		{
 			"name": "SdVar",
 			"scope": [
-				"variable.language.sdvar"
+				"variable.language.sdvar",
+				"variable.language.sdvar.arr",
+				"variable.language.SDVarL3",
+				"variable.language.SDVarL4"
+
 			],
 			"settings": {
 				"foreground": "#ffa264",
@@ -708,7 +712,8 @@
 		{
 			"name": "CPL Local var",
 			"scope":[
-				"cpl.localVar"
+				"cpl.localVar",
+				"nc.vars"
 			],
 			"settings": {
 				"foreground": "#fdff83",
@@ -742,6 +747,16 @@
 			],
 			"settings": {
 				"foreground": "#ff6b6b",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Booleans",
+			"scope":[
+				"constant.other.reference.cpl.boolean.false"
+			],
+			"settings": {
+				"foreground": "#FF0000",
 				"fontStyle": "bold"
 			}
 		}
