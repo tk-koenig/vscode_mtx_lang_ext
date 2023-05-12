@@ -5,7 +5,7 @@
 This VSCode extension recognizes files with the **\*.npg** file extension. 
 These files are typically NC files for the Bosch Rexroth MTX control.
 
-![picture](./Ressources/img/nc_test_file.PNG)
+![picture](https://github.com/tk-koenig/vscode_mtx_lang_ext/raw/main/Ressources/img/nc_test_file.PNG)
 
 This extension is a **beta-version**.
 
